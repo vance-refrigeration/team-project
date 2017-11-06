@@ -9,13 +9,15 @@ module.exports = require('lib/wiring/routes')
 
 // standards RESTful routes
 .resources('examples')
+.resources('products')
+// .resources('products', { except: ['update', 'destroy', 'create'] })
 
 // users of the app have special requirements
 .post('/sign-up', 'users#signup')
 .post('/sign-in', 'users#signin')
 .delete('/sign-out/:id', 'users#signout')
 .patch('/change-password/:id', 'users#changepw')
+.patch('/add-product/:id', 'users#addproduct')
 .resources('users', { only: ['index', 'show'] })
 
 // all routes created
-
