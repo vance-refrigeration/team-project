@@ -1,9 +1,9 @@
 API="http://localhost:4741"
 URL_PATH="/add-product"
-TOKEN="sdfLksbnzK/CdoZGyyL1se3JAN0WD9Ed5UVnBkhsBXQ=--kf6tR25guUE8oiSiHySjyOxnUQjU6r+kbydNKrDUsJ8="
-ID="5a007a590c7cf6e565112680"
-NAME="Refridgerator door"
-DESCRIPTION="test "
+TOKEN="hRcVIPs2nZxkVjywNqg+/oRePl/QxiJf0QN8aSNwad8=--sTDBQAGBAYu62k0OQnv02RXtBCFUecDnpF4nMxm4CHU="
+ID="5a0090ded6e63ceff2f87d5b"
+NAME="test 4"
+DESCRIPTION="test 4"
 PRICE=100
 
 
