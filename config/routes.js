@@ -10,6 +10,7 @@ module.exports = require('lib/wiring/routes')
 // standards RESTful routes
 .resources('examples')
 .resources('products')
+.resources('orders')
 // .resources('products', { except: ['update', 'destroy', 'create'] })
 
 // users of the app have special requirements
@@ -19,6 +20,7 @@ module.exports = require('lib/wiring/routes')
 .patch('/change-password/:id', 'users#changepw')
 .patch('/add-product/:id', 'users#addproduct')
 .patch('/remove-product/:id', 'users#removeproduct')
+.patch('/empty-cart/:id', 'users#emptycart')
 .resources('users', { only: ['index', 'show'] })
 
 // all routes created
