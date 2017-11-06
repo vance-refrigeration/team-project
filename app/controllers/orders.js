@@ -58,7 +58,7 @@ module.exports = controller({
   destroy
 }, { before: [
   { method: setUser, only: ['index', 'show'] },
-  { method: authenticate, except: ['index', 'show'] },
+  { method: authenticate, except: ['show'] },
   { method: setModel(Order), only: ['show'] },
   { method: setModel(Order, { forUser: true }), only: ['update', 'destroy'] }
 ] })

@@ -1,7 +1,7 @@
 API="http://localhost:4741"
 URL_PATH="/add-product"
-TOKEN="V8MMSykI3dIpKnquDyQ/uLoxu2mnXq6/vgB+ZBq1j1w=--g0tdfOBCMd5pfKmeCGvZCiAkCWSegzZPNrU9jj4H1yI="
-ID="5a00b2a0a97ebe7e18ca40e3"
+TOKEN="gxkegGpT2r6FgbthQqqbUNWmhxYB9isp/34l7xi4Onc=--HoYOZekR5Ex+dvNcBRMwqYVzWb4qMzFnkG6Y+6W/Dww="
+ID="5a00d8e371e7dd36fded3def"
 NAME="test 4"
 DESCRIPTION="test 4"
 PRODUCTID='123456'
