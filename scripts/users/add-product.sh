@@ -1,9 +1,10 @@
 API="http://localhost:4741"
 URL_PATH="/add-product"
-TOKEN="hRcVIPs2nZxkVjywNqg+/oRePl/QxiJf0QN8aSNwad8=--sTDBQAGBAYu62k0OQnv02RXtBCFUecDnpF4nMxm4CHU="
-ID="5a0090ded6e63ceff2f87d5b"
+TOKEN="V8MMSykI3dIpKnquDyQ/uLoxu2mnXq6/vgB+ZBq1j1w=--g0tdfOBCMd5pfKmeCGvZCiAkCWSegzZPNrU9jj4H1yI="
+ID="5a00b2a0a97ebe7e18ca40e3"
 NAME="test 4"
 DESCRIPTION="test 4"
+PRODUCTID='123456'
 PRICE=100
 
 
@@ -16,7 +17,8 @@ curl "${API}${URL_PATH}/${ID}" \
     "product": {
       "name": "'"${NAME}"'",
       "description": "'"${DESCRIPTION}"'",
-      "price": "'"${PRICE}"'"
+      "price": "'"${PRICE}"'",
+      "_id": "'"${PRODUCTID}"'"
     }
   }'
 

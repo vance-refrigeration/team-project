@@ -116,9 +116,41 @@ const addproduct = (req, res, next) => {
   }).then(function (user) {
     user.cart.push(req.body.product)
     return user.save()
+  }).then((/* user */) =>
+    res.sendStatus(204)
+  ).catch(makeErrorHandler(res, next))
+}
+
+const removeproduct = (req, res, next) => {
+  debug('Removing product')
+  User.findOne({
+    _id: req.params.id,
+    token: req.user.token
   })
-    .then(console.log)
-    .catch(makeErrorHandler(res, next))
+  .then(function (user) {
+    const productIndex = user.cart.findIndex((product) => {
+      return product._id === req.body.product._id
+    })
+    user.cart.splice(productIndex, 1)
+    return user.save()
+  }).then((/* user */) =>
+    res.sendStatus(204)
+  ).catch(makeErrorHandler(res, next))
+}
+
+const emptycart = (req, res, next) => {
+  debug('Empty cart')
+  User.findOne({
+    _id: req.params.id,
+    token: req.user.token
+  })
+  .then(function (user) {
+    user.cart = []
+    return user.save()
+  })
+  .then((/* user */) =>
+    res.sendStatus(204)
+  ).catch(makeErrorHandler(res, next))
 }
 
 module.exports = controller({
@@ -128,6 +160,8 @@ module.exports = controller({
   signin,
   signout,
   addproduct,
+  removeproduct,
+  emptycart,
   changepw
 }, { before: [
   { method: authenticate, except: ['signup', 'signin'] }
