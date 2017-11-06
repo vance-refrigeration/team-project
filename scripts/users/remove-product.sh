@@ -1,12 +1,8 @@
 API="http://localhost:4741"
-URL_PATH="/add-product"
-TOKEN="hRcVIPs2nZxkVjywNqg+/oRePl/QxiJf0QN8aSNwad8=--sTDBQAGBAYu62k0OQnv02RXtBCFUecDnpF4nMxm4CHU="
+URL_PATH="/remove-product"
+TOKEN="weDXuLMrcmKMbcCXeF2eGf6zPTzw/haiqGzq1gmPYls=--y84ySdhqhKrexMxl5SD97PHH6e5LDkDGay2o2tjPIJk="
 ID="5a0090ded6e63ceff2f87d5b"
-NAME="test 4"
-DESCRIPTION="test 4"
 PRODUCTID='123456'
-PRICE=100
-
 
 curl "${API}${URL_PATH}/${ID}" \
   --include \
@@ -15,9 +11,6 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "product": {
-      "name": "'"${NAME}"'",
-      "description": "'"${DESCRIPTION}"'",
-      "price": "'"${PRICE}"'",
       "_id": "'"${PRODUCTID}"'"
     }
   }'
