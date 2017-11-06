@@ -11,7 +11,8 @@ const userSchema = new mongoose.Schema({
     required: true
   },
   cart: {
-    type: []
+    type: Array,
+    'default': []
   },
   token: {
     type: String,
@@ -37,9 +38,13 @@ const userSchema = new mongoose.Schema({
 userSchema.plugin(uniqueValidator)
 
 // userSchema.virtual('cartTotal').set(function cartTotal () {
-//   this.cartTotal = this.cart.reduce(function (sum, product) {
-//     return sum + product.price
-//   })
+//   if (this.cart.length !== 0) {
+//     this.cartTotal = this.cart.reduce(function (sum, product) {
+//       return sum + product.price
+//     })
+//   } else {
+//     this.cartTotal = 0
+//   }
 // })
 //
 // userSchema.virtual('cartTotal').get(function cartTotal () {

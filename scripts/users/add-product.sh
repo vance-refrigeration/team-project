@@ -1,6 +1,6 @@
 API="http://localhost:4741"
 URL_PATH="/add-product"
-TOKEN="lhpvkLAWFbn1wsUyuwp9MNjPlkjQ3eF02LJBQgDB9/8=--oALAIc6ck7UJI9ile6sKAYr9tPuP5w7dLsrvRNtR28E="
+TOKEN="sdfLksbnzK/CdoZGyyL1se3JAN0WD9Ed5UVnBkhsBXQ=--kf6tR25guUE8oiSiHySjyOxnUQjU6r+kbydNKrDUsJ8="
 ID="5a007a590c7cf6e565112680"
 NAME="Refridgerator door"
 DESCRIPTION="test "
