@@ -20,6 +20,7 @@ module.exports = require('lib/wiring/routes')
 .patch('/change-password/:id', 'users#changepw')
 .patch('/add-product/:id', 'users#addproduct')
 .patch('/remove-product/:id', 'users#removeproduct')
+.patch('/empty-cart/:id', 'users#emptycart')
 .resources('users', { only: ['index', 'show'] })
 
 // all routes created

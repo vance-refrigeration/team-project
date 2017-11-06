@@ -138,6 +138,21 @@ const removeproduct = (req, res, next) => {
   ).catch(makeErrorHandler(res, next))
 }
 
+const emptycart = (req, res, next) => {
+  debug('Empty cart')
+  User.findOne({
+    _id: req.params.id,
+    token: req.user.token
+  })
+  .then(function (user) {
+    user.cart = []
+    return user.save()
+  })
+  .then((/* user */) =>
+    res.sendStatus(204)
+  ).catch(makeErrorHandler(res, next))
+}
+
 module.exports = controller({
   index,
   show,
@@ -146,6 +161,7 @@ module.exports = controller({
   signout,
   addproduct,
   removeproduct,
+  emptycart,
   changepw
 }, { before: [
   { method: authenticate, except: ['signup', 'signin'] }
