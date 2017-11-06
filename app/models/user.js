@@ -10,6 +10,9 @@ const userSchema = new mongoose.Schema({
     unique: true,
     required: true
   },
+  cart: {
+    type: []
+  },
   token: {
     type: String,
     required: true
