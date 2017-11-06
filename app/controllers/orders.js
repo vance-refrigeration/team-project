@@ -24,16 +24,11 @@ const show = (req, res) => {
 }
 
 const create = (req, res, next) => {
-  const order = Object.assign(req.body.orderItems, {
+  const order = Object.assign({
     _owner: req.user._id,
     orderItems: req.user.cart
   })
   Order.create(order)
-      // .then((currentOrder) => {
-      //   currentOrder.orderItems = req.user.cart
-      //   return this.orderItems
-      // })
-    // .then(console.log)
     .then((order) => res.status(201)
           .json({
             order: order.toJSON({ virtuals: true, user: req.user })
