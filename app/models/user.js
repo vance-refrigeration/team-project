@@ -36,15 +36,15 @@ const userSchema = new mongoose.Schema({
 
 userSchema.plugin(uniqueValidator)
 
-userSchema.virtual('cartTotal').set(function cartTotal () {
-  this.cartTotal = this.cart.reduce(function (sum, product) {
-    return sum + product.price
-  })
-})
-
-userSchema.virtual('cartTotal').get(function cartTotal () {
-  return this.cartTotal
-})
+// userSchema.virtual('cartTotal').set(function cartTotal () {
+//   this.cartTotal = this.cart.reduce(function (sum, product) {
+//     return sum + product.price
+//   })
+// })
+//
+// userSchema.virtual('cartTotal').get(function cartTotal () {
+//   return this.cartTotal
+// })
 
 userSchema.methods.comparePassword = function (password) {
   const _this = this
