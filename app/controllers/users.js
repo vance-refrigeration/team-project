@@ -137,9 +137,13 @@ const removeproduct = (req, res, next) => {
     })
     user.cart.splice(productIndex, 1)
     return user.save()
-  }).then((/* user */) =>
-    res.sendStatus(204)
-  ).catch(makeErrorHandler(res, next))
+  }).then(user => {
+    user = user.toObject()
+    delete user.passwordDigest
+    user.token = encodeToken(user.token)
+    res.json({ user })
+  })
+    .catch(makeErrorHandler(res, next))
 }
 
 const emptycart = (req, res, next) => {
