@@ -1,7 +1,7 @@
 API="http://localhost:4741"
 URL_PATH="/orders"
-TOKEN="V8MMSykI3dIpKnquDyQ/uLoxu2mnXq6/vgB+ZBq1j1w=--g0tdfOBCMd5pfKmeCGvZCiAkCWSegzZPNrU9jj4H1yI="
-PRODUCTID="123456"
+TOKEN="wE+y50fXVkjwa7Zf7LzwLTvTEbC2zHMiUoNcMjQcUGU=--bqUXzZtsAjcredQEaTmHke6VHMgyz9ePCfbiPBf2HKY="
+PRODUCTID="ABCDEF"
 
 
 curl "${API}${URL_PATH}" \
