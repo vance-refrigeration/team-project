@@ -116,9 +116,13 @@ const addproduct = (req, res, next) => {
   }).then(function (user) {
     user.cart.push(req.body.product)
     return user.save()
-  }).then((/* user */) =>
-    res.sendStatus(204)
-  ).catch(makeErrorHandler(res, next))
+  }).then(user => {
+    user = user.toObject()
+    delete user.passwordDigest
+    user.token = encodeToken(user.token)
+    res.json({ user })
+  })
+    .catch(makeErrorHandler(res, next))
 }
 
 const removeproduct = (req, res, next) => {
