@@ -1,10 +1,10 @@
 API="http://localhost:4741"
 URL_PATH="/add-product"
-TOKEN="V8MMSykI3dIpKnquDyQ/uLoxu2mnXq6/vgB+ZBq1j1w=--g0tdfOBCMd5pfKmeCGvZCiAkCWSegzZPNrU9jj4H1yI="
-ID="5a00b2a0a97ebe7e18ca40e3"
-NAME="test 4"
-DESCRIPTION="test 4"
-PRODUCTID='123456'
+TOKEN="wE+y50fXVkjwa7Zf7LzwLTvTEbC2zHMiUoNcMjQcUGU=--bqUXzZtsAjcredQEaTmHke6VHMgyz9ePCfbiPBf2HKY="
+ID="5a01c0d3bab8e91f5ab37eb7"
+NAME="testcart2"
+DESCRIPTION="testcart2"
+PRODUCTID='ABCDEF'
 PRICE=100
 
 
