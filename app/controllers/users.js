@@ -133,8 +133,9 @@ const removeproduct = (req, res, next) => {
   })
   .then(function (user) {
     const productIndex = user.cart.findIndex((product) => {
-      return product._id === req.body.product._id
+      return product.id === req.body.product.id
     })
+    console.log('productIndex is', productIndex)
     user.cart.splice(productIndex, 1)
     return user.save()
   }).then(user => {
