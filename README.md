@@ -23,7 +23,7 @@ This app allows customers to view refrigeration products available for purchase.
 
 ## Planning, Process & Problem-Solving
 
-We started with a wireframe, which led to planning uur collections, documents, and their interplay and ultimately creating an ERD.
+We started with a wireframe, which led to planning our collections, documents, and their interplay and ultimately creating an ERD.
 
 Cole set up a basic HTML template using Bootstrap & Handlebars so that we had a skeleton website.
 
@@ -31,12 +31,11 @@ Next we set up the API - creating products to test, creating a collection of Ord
 
 We began work on the Client by making sure that products displayed, then adding products to the shopping cart, populating order history, and lastly integrating Stripe to handle checkout.
 
-Most of our time was spent pair-programming but we held frequent stand-ups to be sure that we weren't work in such a way that we would create complex merge conflicts.  More challenging problems and major plamning decisions were made as a team.  On occasion, all four of us huddled around one computer and at times we were all working on our own machines, but always with a well-communicated common goal.
+Most of our time was spent pair-programming but we held frequent stand-ups to be sure that we weren't working in such a way that we would create complex merge conflicts.  More challenging problems and major plamning decisions were made as a team.  On occasion, all four of us huddled around one computer and at times we were all working on our own machines, but always with a well-communicated common goal.
 
 
 ### ERD
-
-- [Entity Relationship Diagram]
+[Entity Relationship Diagram]
   Users {
     _id
     username
