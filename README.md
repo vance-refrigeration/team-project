@@ -35,7 +35,7 @@ Most of our time was spent pair-programming but we held frequent stand-ups to be
 
 
 ### ERD
-[Entity Relationship Diagram]
+```[Entity Relationship Diagram]
   Users {
     _id
     username
@@ -54,7 +54,7 @@ Most of our time was spent pair-programming but we held frequent stand-ups to be
     name
     description
     price
-  }
+  }```
 
 ## Cataloge of Routes
 
