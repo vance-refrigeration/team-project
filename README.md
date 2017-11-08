@@ -57,7 +57,7 @@ Most of our time was spent pair-programming but we held frequent stand-ups to be
   }
   ```
 
-## Cataloge of Routes
+## Catalog of Routes
 
 - A post to 'sign-up' routes to users/signup
 - A post to 'sign-in' routes to users/signin
@@ -66,10 +66,8 @@ Most of our time was spent pair-programming but we held frequent stand-ups to be
 - A patch to 'add-product/:id' routes to users/addproduct
 - A patch to 'remove-product/:id' routes to users/removeproduct
 - A patch to 'empty-cart/:id' routes to users/emptycart
-- Products & Orders use the standard RESTful routes;
+- Products & Orders use the standard RESTful routes
   - Orders uses only 'index' & 'show'
-
-## Development
 
 
 ### Goals for Future Versions
