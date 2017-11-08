@@ -34,13 +34,13 @@ We began work on the Client by making sure that products displayed, then adding 
 Most of our time was spent pair-programming but we held frequent stand-ups to be sure that we weren't working in such a way that we would create complex merge conflicts.  More challenging problems and major plamning decisions were made as a team.  On occasion, all four of us huddled around one computer and at times we were all working on our own machines, but always with a well-communicated common goal.
 
 
-### ERD
+## ERD
 ```[Entity Relationship Diagram]
   Users {
     _id
     username
     password
-    cart
+    cart (An array of the cart items)
     cartTotal (A virtual attribute of the total prices of all items in cart)
   }
   Orders {
@@ -70,7 +70,7 @@ Most of our time was spent pair-programming but we held frequent stand-ups to be
   - Orders uses only 'index' & 'show'
 
 
-### Goals for Future Versions
+## Goals for Future Versions
 - Search function
 - A more sophistocated/logical process for order numbers
 - Photos of products
