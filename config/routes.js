@@ -9,7 +9,7 @@ module.exports = require('lib/wiring/routes')
 
 // standards RESTful routes
 .resources('examples')
-.resources('products')
+.resources('products', { only: ['index', 'show'] })
 .resources('orders')
 // .resources('products', { except: ['update', 'destroy', 'create'] })
 
